@@ -1,0 +1,27 @@
+body{
+    background-image: url("/src/KHDF3ZAM6JHT5MP7U7TOZELLEQ.avif");
+    background-repeat: no-repeat;
+    }
+h1{
+margin-left: 650px;
+}
+
+.Center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    background-color: rgb(221, 197, 132);
+    margin-left: 300px;
+
+}
+
+.submit_button{
+    width:500px;
+    height: 25px;
+    margin-right: 50px;
+    background-image: url("/src/imagen_submit.jpg");
+    border: none;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}

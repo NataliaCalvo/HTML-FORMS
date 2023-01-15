@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <script src="/app.js"></script>
+    <h1>SURVEY FORM</h1>
+    <div class="Center">
+        <form class="Form1"onsubmit="return validateForm()" action="/app.js" method="post">
+            <h2 class="Name">Name</h2>
+                <input type="name" placeholder="Write your name">
+            <h2 class="Email" pattern="[A-Za-z-0-9]{4-50}">Email</h2>
+                <input type="email" placeholder="Write your email">
+            <h2 class="Age">Age</h2>
+                <input type="number" placeholder="Write your age">
+            <h2 class="Options">Which option best describes you?</h2>
+                <label for="Option"></label>
+            <select id="Option" name="Option">
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Others">Others</option>
+            </select>
+            <h2 class="Recommend">Would you recommend this site?</h2>
+                <input type="radio" id="yes" name="button_yes" value="Yes!">
+                    <label for="button_yes">Yes!</label><br>
+                <input type="radio" id="no" name="button_no" value="No!">
+                    <label for="button_no">No!</label><br>
+                <input type="radio" id="maybe" name="button_maybe" value="Maybe!">
+                    <label for="button_maybe">Maybe!</label><br>
+
+            <form class="Form2"onsubmit="return validateForm2()">
+                <h2 class="Languages">Languages and frameworks known <i>(check all that apply)</i>:</h2>
+                <input type="checkbox" id="option1" name="option1" value="C">
+                    <label for="vehicle1"> C</label><br>
+                <input type="checkbox" id="option2" name="option2" value="C++">
+                    <label for="vehicle2"> C++</label><br>
+                <input type="checkbox" id="option3" name="option3" value="C#">
+                    <label for="vehicle3"> C#</label><br>
+                <input type="checkbox" id="option4" name="option4" value="Java">
+                    <label for="vehicle1"> Java</label><br>
+                <input type="checkbox" id="option5" name="option5" value="Python">
+                    <label for="vehicle2"> Phyton</label><br>
+                <input type="checkbox" id="option6" name="option6" value="JavaScript">
+                    <label for="vehicle3"> JavaScript</label><br>
+                <input type="checkbox" id="option7" name="option7" value="React">
+                    <label for="vehicle3"> React</label><br>
+                <input type="checkbox" id="option8" name="option8" value="Angular">
+                    <label for="vehicle1"> Angular</label><br>
+                <input type="checkbox" id="option9" name="option9" value="Django">
+                    <label for="vehicle2"> Django</label><br>
+                <input type="checkbox" id="option0" name="option0" value="Spring">
+                    <label for="vehicle3"> Spring</label><br>
+            </form>
+            <form class="Form3" onsubmit="return validateForm3()">
+                <h2 class="Comments">If you have any comments or suggestions, please, write here:</h2>
+                <textarea name="message" rows="7" cols="75" placeholder="Write your comments or suggestions here">
+                    </textarea>
+            </form>
+                <form class="Form4" onsubmit="return validateForm4()"><input class="submit_button" type="submit" value="Submit"></form>
+        </form>
+        </div>
+ 
+    </body>
+    </html>
